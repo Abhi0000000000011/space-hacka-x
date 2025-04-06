@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroStow - Space Mission Stowage Automation</title>
+    <style>
+        :root {
+            --primary: #0b3d91;
+            --secondary: #fc3d21;
+            --light: #ffffff;
+            --dark: #000000;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(11, 61, 145, 0.8), rgba(11, 61, 145, 0.8)), url('https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .problem-statement {
+            background-color: var(--light);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .solution {
+            background-color: var(--light);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background-color: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: var(--primary);
+        }
+        
+        .cta {
+            background-color: var(--secondary);
+            color: var(--light);
+            text-align: center;
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #082b6b;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .demo-image {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AstroStow</h1>
+            <p>Revolutionizing Space Mission Stowage Operations</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Automating Astronaut Stowage Operations</h2>
+            <p>Freeing up valuable astronaut time for scientific discovery</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <section class="problem-statement">
+            <h2>The Problem: Stowage Operations Consume 25% of Astronaut Time</h2>
+            <p>Current space missions require astronauts to spend approximately 25% of their valuable time on stowage operations - tracking, locating, and managing equipment and supplies aboard the spacecraft. This time could be better spent on scientific research and mission-critical activities.</p>
+            
+            <p>Key challenges include:</p>
+            <ul>
+                <li>Manual inventory tracking is time-consuming and error-prone</li>
+                <li>Physical constraints of microgravity make item organization difficult</li>
+                <li>Limited visibility of stored items leads to inefficient retrieval</li>
+                <li>No standardized system for stowage across missions</li>
+            </ul>
+            
+            <img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Astronaut working in space station" class="demo-image">
+        </section>
+        
+        <section class="solution">
+            <h2>Our Solution: AstroStow Automation System</h2>
+            <p>AstroStow is a comprehensive software solution that automates stowage operations in space missions, reducing astronaut involvement by up to 80% and reclaiming valuable time for scientific work.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Smart Inventory Tracking</h3>
+                    <p>RFID and computer vision automatically track all items in real-time, maintaining perfect inventory records without astronaut input.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>3D Stowage Visualization</h3>
+                    <p>Interactive 3D maps of the spacecraft show exact item locations with search functionality for quick retrieval.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Automated Replenishment Alerts</h3>
+                    <p>The system monitors consumables and automatically alerts mission control when resupply is needed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Optimal Packing Algorithms</h3>
+                    <p>AI-powered suggestions for optimal storage arrangements based on item usage frequency and mission priorities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Cross-Mission Compatibility</h3>
+                    <p>Standardized system works across different spacecraft and missions with customizable configurations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Voice Command Integration</h3>
+                    <p>Hands-free operation through natural language processing for voice queries and updates.</p>
+                </div>
+            </div>
+            
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Software interface concept" class="demo-image">
+        </section>
+        
+        <section class="benefits">
+            <h2>Mission Benefits</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Time Savings</h3>
+                    <p>Reduce stowage-related tasks from 25% to under 5% of astronaut time, freeing up hundreds of hours per mission.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Increased Accuracy</h3>
+                    <p>Automated tracking eliminates human error in inventory management.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Improved Safety</h3>
+                    <p>Better organization reduces risks of lost or misplaced critical items.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Enhanced Science</h3>
+                    <p>More available time for astronauts to focus on research and experiments.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Space Mission Operations?</h2>
+            <p>Contact us to learn more about implementing AstroStow on your next mission.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AstroStow Solutions. All rights reserved.</p>
+            <p>Designed for NASA and commercial space partners.</p>
+        </div>
+    </footer>
+</body>
+</html>
